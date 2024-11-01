@@ -1,14 +1,10 @@
 import sys
-from cgi import logfp
 
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_absolute_error
 import joblib
 
-
-from Scripts.database import save_to_db
-from Scripts.process_data import *
 from classes.DataProcessor import *
 from classes.DatabaseHandler import *
 from classes.Model import Model
