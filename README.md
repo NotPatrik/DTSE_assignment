@@ -105,6 +105,13 @@ Prediction output:
 - Tests
   - Automated tests, like Unit tests for example, will make sure that our code / application is still working as we expect it to work or behave. After updating or making any changes, unintentionally we can change the behavior of our code. These tests help us to deliver a code we intend to deliver.
   - I think testing is one of the most neglected aspects of development.
+  - As an example for implementation in this assignment, one of the test could check whether the input data have the expected format. Something like this:
+  ```angular2html
+    class TestStringMethods(unittest.TestCase):
+        def test_format(self, data):
+            formatted_data = format_data(data)
+            self.assertEqual(formatted_data, EXPECTED_FORMAT) 
+  ```
 - Exception handling
   - I would implement it with try-except methods.
   - Each separate process I would put into separate try{} brackets. This way it's easier to handle unexpected inputs,...
@@ -121,3 +128,4 @@ Prediction output:
 - API
   - I have some experience with handling API requests from school and also from work. In python, I have worked with `fastapi` library, so I would use that for implementing endpoints, etc.
   - As for a why, API serves as a base to connect back-end and front-end of an application. Using API requests also help with security and overall control of data. 
+  - In this assigment we could use API requests in handling the data, pulling the data from the database on the server.
